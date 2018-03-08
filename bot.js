@@ -49,8 +49,8 @@ function Bringfrase(){
 		//	" do u know da wae",
 		//	" ella no te ama",
 			"deberias dejar de tomar coca",
-			"la coa te va a matar anthony",
-			"por que te haces tando daño a ti mismo consumiendo coca",
+			"la coca te va a matar anthony",
+			"por que te haces tando daño a ti mismo consumiendo coca"
 		//	" quien te gusta ya es naranja de otro moviento",
 		//	" y acaso crees que  a mi me importa tu vida",
 		//	" que me preguntas a mi , preguntale a yubarta",
