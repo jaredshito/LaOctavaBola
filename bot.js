@@ -39,13 +39,25 @@ function tweetEvent(eventMsg){
 
 function Bringfrase(){
 	
-	frases=["deberias dejar de tomar coca",
-		"la coca te va a matar anthony",
-		"por que te haces tando daño a ti mismo consumiendo coca"
-		//	]
+	frases=[" oni-chan Despierta!!!",
+			" tu dia sera algo rudo , sera como montar el lomo de un tigre atravez del ojo de un huracan",
+			" error en el servidor, intentalo mas tarde",
+			" haz intentado tomar cloro",
+			" hoy no es buen dia para ti",
+			" probablemente encuentres el amor, probablemente",
+			" Ponte vergas morr@ ponte vergas",
+			" do u know da wae",
+			" ella no te ama",
+			" quien te gusta ya es naranja de otro moviento",
+			" y acaso crees que  ami me importa tu vida",
+			" que me preguntas a mi , preguntale a yubarta",
+			" deja de comer cosas que te dañan"]
 	noFrase=frases.length;
 	var random = Math.floor(Math.random()*noFrase);
 	frase=frases[random];
 	return frase;
 
 }
+
+//Bringfrase();
+
