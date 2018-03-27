@@ -15,21 +15,43 @@ function tweetEvent(eventMsg){
 	// If we want the conversation thread
   	var id = eventMsg.id_str;
 	if (replyto === 'LaOctavaBola'){
-		frase=Bringfrase();
-		var newtweet = '@' + from + ' '+ frase + '.';
+		if(from === 'Thony_kun'){
+			frase=BringfraseTony();
+			var newtweet = '@' + from + ' '+ frase + '.';
 
 
-		T.post('statuses/update', { status: newtweet, in_reply_to_status_id: id},tweeted);
+			T.post('statuses/update', { status: newtweet, in_reply_to_status_id: id},tweeted);
 
 
-		function tweeted(err,data,response){
-			if (err) {
-        	console.log("algo esta mal");
-        	console.log(err);
-      		} else {
-        		console.log("funciona");
+			function tweeted(err,data,response){
+				if (err) {
+	        	console.log("algo esta mal");
+	        	console.log(err);
+	      		} else {
+	        		console.log("funciona");
+				}
 			}
+
 		}
+		else{
+			frase=Bringfrase();
+			var newtweet = '@' + from + ' '+ frase + '.';
+
+
+			T.post('statuses/update', { status: newtweet, in_reply_to_status_id: id},tweeted);
+
+
+			function tweeted(err,data,response){
+				if (err) {
+	        	console.log("algo esta mal");
+	        	console.log(err);
+	      		} else {
+	        		console.log("funciona");
+				}
+			}
+
+		}
+		
 	}
 
 }
@@ -52,6 +74,21 @@ function Bringfrase(){
 			" y acaso crees que  ami me importa tu vida",
 			" que me preguntas a mi , preguntale a yubarta",
 			" deja de comer cosas que te dañan"]
+	noFrase=frases.length;
+	var random = Math.floor(Math.random()*noFrase);
+	frase=frases[random];
+	return frase;
+
+}
+
+function BringfraseTony(){
+	
+	frases=[" deja de comer cosas que te dañan",
+			" la coca te va a matar antoine",
+			" uganda is waiting for you antoine ",
+			" Stop drink this shit ",
+			" Mas agua menos pendeja coca ",
+			" Al chile ya me vale madres tony"]
 	noFrase=frases.length;
 	var random = Math.floor(Math.random()*noFrase);
 	frase=frases[random];
